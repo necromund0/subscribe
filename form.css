@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.newsletter-form {
+  margin: auto;
+  margin-top: 1rem;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.newsletter-form label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.newsletter-form input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  width: 100%;
+  padding: 10px 25px;
+  border: none;
+  background: #0a0a0a;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #000000;
+}
