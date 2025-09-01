@@ -129,7 +129,7 @@ q::after {
 }
 
 .bg-voces {
-  background-image: url(assets/voces.webp);
+  background-image: url(voces.webp);
 }
 
 .filter {
@@ -218,3 +218,4 @@ footer img {
     transform: translateX(0);
   }
 }
+
