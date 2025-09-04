@@ -7,7 +7,7 @@
       http-equiv="Content-Security-Policy"
       content="form-action 'self' https://formspree.io"
     />
-    <title>Suscribirse</title>
+    <title data-translate="subscribe"></title>
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
       rel="stylesheet"
@@ -21,24 +21,29 @@
   </head>
 
   <body>
-    <main class="layout bg bg-voces filter" style="height: 100vh !important">
+    <main
+      class="layout bg-cover bg-voces filter"
+      style="height: 100vh !important"
+    >
       <header>
         <a href="https://necromundo.neocities.org/">
-          <h4 class="vib back">Ir atrás</h4>
+          <h4 class="vib back" data-translate="back"></h4>
         </a>
       </header>
 
       <section class="page-content">
-        <p style="margin: 2rem auto; margin-top: 0">
-          <q
+        <p style="margin: 2rem auto; margin-top: 0" data-translate="forces">
+          <!-- <q
             >En el hálito mismo del Caos <br />
             Conjura fuerzas espectrales<br />
             A desencantar el Sueño de la Materia</q
-          >
+          > -->
         </p>
-        <h2 class="vib none" style="text-align: center">
-          Recibí nuestras novedades
-        </h2>
+        <h2
+          class="vib none"
+          style="text-align: center"
+          data-translate="title"
+        ></h2>
         <form
           action="https://formspree.io/f/meolzzrw"
           method="POST"
@@ -46,7 +51,7 @@
           id="newsletter"
         >
           <div>
-            <label for="email"> Tu mail: </label>
+            <label for="email" data-translate="email"> </label>
             <input
               type="email"
               name="email"
@@ -55,15 +60,22 @@
             />
           </div>
           <div>
-            <label for="message">¿Deseas dejarnos un mensaje?</label>
+            <label for="message" data-translate="msg"></label>
             <textarea name="message"></textarea>
           </div>
 
-          <div><button class="vib" type="submit">Suscribirme</button></div>
+          <div>
+            <button
+              class="vib"
+              type="submit"
+              data-translate="subscribe"
+            ></button>
+          </div>
         </form>
       </section>
     </main>
+
+    <script src="lang.js"></script>
+    <script src="header.js" defer></script>
   </body>
 </html>
-
-

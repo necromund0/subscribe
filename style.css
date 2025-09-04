@@ -2,6 +2,7 @@
   --color-bg: #040404;
   --color-bg-noimg: #131313;
   --color-text: #f5f3eb;
+  --color-text-trans: rgb(245, 243, 235, 0.8);
   --color-link: rgba(237, 231, 228, 0.8);
 }
 
@@ -86,7 +87,7 @@ ul li {
 }
 
 .page-content {
-  margin: 40px auto;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -97,6 +98,7 @@ ul li {
   font-size: 1.2rem;
   line-height: 2rem;
   font-family: "Oranienbaum";
+  letter-spacing: 1px;
 }
 
 q {
@@ -119,21 +121,45 @@ q::after {
 }
 
 .bg {
+  background-position: top center;
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.bg-cover {
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 }
 
-.bg-mishima {
-  background-image: url(assets/mishima.webp);
-}
-
 .bg-voces {
-  background-image: url(voces.webp);
+  background-image: url(/voces.webp);
 }
 
 .filter {
   filter: brightness(80%);
+}
+
+.color-trans {
+  color: var(--color-text-trans) !important;
+}
+
+.lang-toggle {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  button {
+    padding: 10px;
+    margin-left: auto;
+    margin: 5px;
+    color: rgba(237, 231, 228, 0.5);
+    background-color: transparent;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 footer {
@@ -167,6 +193,7 @@ footer img {
 /* Media queries */
 @media (max-width: 768px) {
   .home {
+    padding-top: 40px !important;
     min-height: 50vh;
   }
   h1 {
@@ -198,6 +225,10 @@ footer img {
     text-align: center;
     height: 20vh;
   }
+
+  ul {
+    padding-left: 10px !important;
+  }
 }
 
 /* Animations */
@@ -218,4 +249,3 @@ footer img {
     transform: translateX(0);
   }
 }
-
