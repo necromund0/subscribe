@@ -10,7 +10,7 @@ function updateLanguageButton(lang) {
 // Función para cargar traducciones desde JSON
 async function setLanguage(lang) {
   try {
-    const response = await fetch(`/lang/${lang}.json`);
+    const response = await fetch(`${lang}.json`);
     const translations = await response.json();
 
     document.querySelectorAll("[data-translate]").forEach((el) => {
